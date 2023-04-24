@@ -1,0 +1,9 @@
+.Appartement-page{
+    color: #FF6060;
+}
+
+
+.apartment_area{
+    display: flex;
+    gap: 1rem;
+}

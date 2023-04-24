@@ -1,0 +1,17 @@
+.banner{
+    max-width: 100%;
+    min-height: 100px;
+    margin: auto;
+    border-radius: 1rem;
+   
+    opacity: 2;
+    margin-bottom: 2rem;
+}
+.titre-banner{
+    color: white;
+    min-height: 100px;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+}
