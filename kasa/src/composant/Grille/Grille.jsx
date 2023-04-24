@@ -1,15 +1,15 @@
-import React from 'react'
-import "./Grille.css"
-import Appartement from '../Appartement/Appartement.jsx'
+import React from "react";
+import "./Grille.css";
+import AppartementCard from "../AppartementCard/AppartementCard";
 
 function Grille() {
   return (
-    <div className='location'>
-    <Appartement/>
-    <Appartement/>
-    <Appartement/>
-    <Appartement/>
+    <div className="location">
+      <AppartementCard />
+      <AppartementCard />
+      <AppartementCard />
+      <AppartementCard />
     </div>
-  )
+  );
 }
-export default Grille
+export default Grille;

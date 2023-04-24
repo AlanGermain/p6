@@ -1,8 +1,9 @@
 import React from "react";
+import "./AboutDescription.css";
 
 function AboutDescription() {
   return (
-    <div className="description">
+    <div className="description2">
       <p className="titre_description">
         <span>Description</span>
         <span>

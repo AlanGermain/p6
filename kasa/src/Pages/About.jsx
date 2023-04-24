@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import Banner from "../Layout/Banner/Banner";
+import ImageBanner from "../composant/ImageBanner/ImageBanner";
 import AboutDescription from "../composant/AboutDescription/AboutDescription";
 import Main from "../Layout/Main/Main";
 
@@ -8,11 +8,13 @@ function About() {
   return (
     <div>
       <Main>
-        <Banner />
-        <AboutDescription />
-        <AboutDescription />
-        <AboutDescription />
-        <AboutDescription />
+        <ImageBanner />
+        <div className="about_contener">
+          <AboutDescription />
+          <AboutDescription />
+          <AboutDescription />
+          <AboutDescription />
+        </div>
       </Main>
     </div>
   );

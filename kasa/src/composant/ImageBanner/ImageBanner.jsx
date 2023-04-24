@@ -1,6 +1,6 @@
 import React from "react";
-import "./BannerApartment.css";
-function BannerApartment() {
+import "./ImageBanner.css";
+function ImageBanner() {
   return (
     <div>
       <img className="image" src="Background.png" alt="" />
@@ -8,4 +8,4 @@ function BannerApartment() {
   );
 }
 
-export default BannerApartment;
+export default ImageBanner;
