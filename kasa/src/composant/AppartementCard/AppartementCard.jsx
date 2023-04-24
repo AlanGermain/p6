@@ -2,11 +2,11 @@ import React from "react";
 import "./AppartementCard.css";
 import { NavLink } from "react-router-dom";
 
-function AppartementCard() {
+function AppartementCard(props) {
   return (
     <NavLink to="/flat" className="appartement">
-      <img className="appartement_image" src="Background.png" alt="" />
-      <div className="title-appartment">titre de la location</div>
+      <img className="img" src={props.image} alt="" />
+      <div className="title-appartment">{props.title}</div>
     </NavLink>
   );
 }

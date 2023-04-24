@@ -12,7 +12,6 @@ function ApartmentPage() {
       <Main>
         <ImageBanner />
         <ApartmentPageTitle />
-
         <div className="apartment_area">
           <ApartmentDescription />
           <ApartmentEquipement />
