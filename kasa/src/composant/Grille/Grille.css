@@ -7,8 +7,7 @@
     flex-wrap: wrap;
     gap: 1rem;
     padding: 1rem;
-    justify-content: space-between;
-    
+    justify-content: space-evenly;
 }
 @media screen and (width <= 768px) {
     .location{

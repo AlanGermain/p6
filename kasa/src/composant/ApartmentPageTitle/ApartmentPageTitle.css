@@ -7,6 +7,13 @@
     color: #FF6060;
 }
 .badge{
+    color: #FF6060;
+background-color: #dfdbdb;
+height: 64px;
+width: 64px;
+border-radius: 50%;
+}
+.badge img {
 color: #FF6060;
 background-color: #dfdbdb;
 height: 64px;
@@ -44,6 +51,8 @@ border-radius: 50%;
     padding: 0.3em 1em; 
     border-radius: 0.7rem;
     text-align: center;
+    justify-content: center;
+    align-items: baseline;
    
 }
 .tags{
@@ -58,9 +67,8 @@ border-radius: 50%;
 .on{
     color: #FF6060;
 }
-.off{
-    color: #dfdbdb;
-}
+
 .star{
     font-size: 1.8rem;
+    color: #dfdbdb;
 }

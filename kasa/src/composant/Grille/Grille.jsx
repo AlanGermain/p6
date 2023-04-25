@@ -11,11 +11,14 @@ function Grille() {
       .then((res) => res.json())
       .then((res) => setApartment(res));
   }
-
   return (
     <div className="location">
       {apartments.map((apartment) => (
-        <AppartementCard title={apartment.title} image={apartment.cover} />
+        <AppartementCard
+          title={apartment.title}
+          image={apartment.cover}
+          id={apartment.id}
+        />
       ))}
     </div>
   );

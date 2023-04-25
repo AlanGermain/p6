@@ -1,11 +1,10 @@
 import React from "react";
 import "./ImageBanner.css";
-function ImageBanner() {
+function ImageBanner(props) {
   return (
     <div>
-      <img className="image" src="Background.png" alt="" />
+      <img src={props.imageURL} alt="" className="image" />
     </div>
   );
 }
-
 export default ImageBanner;
