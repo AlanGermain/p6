@@ -3,7 +3,7 @@ import "./ApartmentPageTitle.css";
 
 function ApartmentPageTitle(props) {
   const name = props.host.name;
-  const [firstName, LastName] = name.split("2");
+  const [firstName, LastName] = name.split(" ");
 
   return (
     <div>
@@ -13,7 +13,10 @@ function ApartmentPageTitle(props) {
           <h2> {props.location} </h2>
           <div className="tags">
             {props.tags.map((tag) => (
-              <span className="tag"> {tag} </span>
+              <span className="tag" key={tag}>
+                {" "}
+                {tag}{" "}
+              </span>
             ))}
           </div>
         </div>
@@ -27,13 +30,13 @@ function ApartmentPageTitle(props) {
               <img src={props.host.picture} alt="" />
             </div>
           </div>
+
           <div className="star">
-            <span className="on">★</span>
-            <span className="on">★</span>
-            <span className="on">★</span>
-            <span className="on">★</span>
-            <span>★</span>
-            <span>★</span>
+            {[1, 2, 3, 4, 5].map((num) => (
+              <span className={props.rating >= num ? "on" : null} key={num}>
+                ★
+              </span>
+            ))}
           </div>
         </div>
       </div>

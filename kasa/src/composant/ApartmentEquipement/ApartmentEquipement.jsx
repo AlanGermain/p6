@@ -1,7 +1,7 @@
 import React from "react";
 import "./ApartmentEquipement.css";
 
-function ApartmentEquipement() {
+function ApartmentEquipement(props) {
   return (
     <div className="equipements">
       <p className="titre_equipements">
@@ -10,10 +10,7 @@ function ApartmentEquipement() {
           <i className="fa-solid fa-chevron-up"></i>
         </span>
       </p>
-      <p className="equipements_content">
-        Climatisation Wi-Fi Cuisine Espace de travail Fer à repasser
-        Sèche-cheveux Cintres{" "}
-      </p>
+      <p className="equipements_content">{props.equipements}</p>
     </div>
   );
 }

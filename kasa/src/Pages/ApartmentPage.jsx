@@ -40,8 +40,12 @@ function ApartmentPage() {
           rating={selectedFlat.rating}
         />
         <div className="apartment_area">
-          <ApartmentDescription />
-          <ApartmentEquipement />
+          <ApartmentDescription description={selectedFlat.description} />
+          <ApartmentEquipement
+            equipments={selectedFlat.equipments.map((eq) => (
+              <li>{eq}</li>
+            ))}
+          />
         </div>
       </Main>
     </div>
