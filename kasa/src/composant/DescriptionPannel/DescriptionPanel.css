@@ -1,10 +1,9 @@
-.equipements{
+.description{
     color: #FF6060;
     margin-block: 0;
-    width: 50%;
+    width: 100%;
 }
-
-.titre_equipements{
+.titre_description{
     background-color: #FF6060;
     color: white;
     padding: 0.7rem 1rem;
@@ -12,12 +11,12 @@
     margin-bottom: 0;
     display: flex;
     justify-content: space-between;
+    animation: normal;
 }
-.titre_equipements i {
+.titre_description i{
     cursor: pointer;
 }
-
-.equipements_content{
+.description_content{
     background-color: #dfdbdb;
     color: #FF6060;
     padding: 1rem;
@@ -26,4 +25,4 @@
     position: relative;
     top: -0.3rem;
     z-index: -1;
-}
+    }

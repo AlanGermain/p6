@@ -3,8 +3,8 @@ import "./ApartmentPage.css";
 import Main from "../Layout/Main/Main";
 import ImageBanner from "../composant/ImageBanner/ImageBanner";
 import ApartmentPageTitle from "../composant/ApartmentPageTitle/ApartmentPageTitle";
-import ApartmentDescription from "../composant/ApartmentDescription/ApartmentDescription";
-import ApartmentEquipement from "../composant/ApartmentEquipement/ApartmentEquipement";
+import DescriptionPanel from "../composant/DescriptionPannel/DescriptionPanel";
+
 import { useLocation } from "react-router-dom";
 
 function ApartmentPage() {
@@ -40,10 +40,14 @@ function ApartmentPage() {
           rating={selectedFlat.rating}
         />
         <div className="apartment_area">
-          <ApartmentDescription description={selectedFlat.description} />
-          <ApartmentEquipement
-            equipments={selectedFlat.equipments.map((eq) => (
-              <li>{eq}</li>
+          <DescriptionPanel
+            content={selectedFlat.description}
+            title="Description"
+          />
+          <DescriptionPanel
+            title="Equipement"
+            content={selectedFlat.equipments.map((eq) => (
+              <li> {eq} </li>
             ))}
           />
         </div>

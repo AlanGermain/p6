@@ -1,19 +1,31 @@
 import React from "react";
 import "./About.css";
-import ImageBanner from "../composant/ImageBanner/ImageBanner";
-import AboutDescription from "../composant/AboutDescription/AboutDescription";
+import BannerAbout from "../composant/BannerAbout/BannerAbout";
+import DescriptionPanel from "../composant/DescriptionPannel/DescriptionPanel";
 import Main from "../Layout/Main/Main";
 
 function About() {
   return (
     <div>
       <Main>
-        <ImageBanner />
+        <BannerAbout />
         <div className="about_contener">
-          <AboutDescription />
-          <AboutDescription />
-          <AboutDescription />
-          <AboutDescription />
+          <DescriptionPanel
+            title="Fiabilité"
+            content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
+          />
+          <DescriptionPanel
+            title="Respect"
+            content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
+          />
+          <DescriptionPanel
+            title="Service"
+            content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
+          />
+          <DescriptionPanel
+            title="Sécurité"
+            content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
+          />
         </div>
       </Main>
     </div>
