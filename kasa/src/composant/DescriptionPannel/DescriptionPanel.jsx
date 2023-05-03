@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./DescriptionPanel.css";
 
 function DescriptionPanel(props) {
-  const [isConstentVisible, setIsContentVisibile] = useState(false);
+  const [isConstentVisible, setIsContentVisibile] = useState(true);
   const showContent = () => {
     setIsContentVisibile(!isConstentVisible);
   };

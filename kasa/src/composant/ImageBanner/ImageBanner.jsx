@@ -37,6 +37,12 @@ function ImageBanner(props) {
           <button onClick={moveToNext} className="next">
             <i className="fa-solid fa-chevron-left"></i>
           </button>
+          <span className="counter">
+            {currentPicture + 1} / {pictures.length}
+          </span>{" "}
+          <button onClick={moveToNext} className="next">
+            <i className="fa-solid fa-chevron-left"></i>
+          </button>
           <button onClick={moveToPrevious} className="previous">
             <i className="fa-solid fa-chevron-right"></i>
           </button>
