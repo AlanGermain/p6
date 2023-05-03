@@ -1,8 +1,56 @@
 .image{
-    margin-bottom: 2rem;
-    width: 100%;
-    height: 20rem;
+    margin-bottom: 2rem;   
+   position: absolute;
+   inset: 0;
+   width: 100%; 
+   height: 100%;
     object-fit: cover;
     border-radius: 1rem;
+    opacity: 0;
+    transition: opacity 0.5s;
 
+}
+
+.image-show {
+    margin-bottom: 2rem;   
+    position: absolute;
+    inset: 0;
+    width: 100%; 
+    height: 100%;
+     object-fit: cover;
+     border-radius: 1rem;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+.container{
+    position: relative;
+    height: 25rem;
+    width: 100%; 
+    object-fit: cover;
+}
+.next{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5rem;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    font-size: 3rem;
+    border: none;
+    outline: none;
+
+}
+.previous{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 5rem;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    font-size: 3rem;
+    border: none;
+    outline: none;
 }

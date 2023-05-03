@@ -29,7 +29,7 @@ function ApartmentPage() {
   return (
     <div className="Apartement-page">
       <Main>
-        <ImageBanner imageURL={selectedFlat.cover} />
+        <ImageBanner pictures={selectedFlat.pictures} />
 
         <ApartmentPageTitle
           title={selectedFlat.title}
@@ -46,8 +46,8 @@ function ApartmentPage() {
           />
           <DescriptionPanel
             title="Equipement"
-            content={selectedFlat.equipments.map((eq) => (
-              <li> {eq} </li>
+            content={selectedFlat.equipments.map((eq, i) => (
+              <li key={i}> {eq} </li>
             ))}
           />
         </div>

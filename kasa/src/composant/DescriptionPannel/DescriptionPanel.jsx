@@ -6,6 +6,7 @@ function DescriptionPanel(props) {
   const showContent = () => {
     setIsContentVisibile(!isConstentVisible);
   };
+
   return (
     <div className="description">
       <p className="titre_description">
@@ -20,5 +21,4 @@ function DescriptionPanel(props) {
     </div>
   );
 }
-
 export default DescriptionPanel;
