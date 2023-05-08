@@ -10,7 +10,13 @@ import { useLocation } from "react-router-dom";
 function ApartmentPage() {
   const location = useLocation();
   console.log("location:", location);
+  {
+    /*useState sert à initialisé selectedFlat avec la valeur null, et la fonction setSelectedFlat est utilisée pour mettre à jour cet état. */
+  }
   const [selectedFlat, setSelectedFlat] = useState(null);
+  {
+    /*useEffect est utilisé pour effectuer une action  */
+  }
   useEffect(fetchApartmentData, []);
 
   function fetchApartmentData() {
@@ -23,6 +29,9 @@ function ApartmentPage() {
         setSelectedFlat(flat);
       })
       .catch(console.error);
+  }
+  {
+    /*si selectedflat ont été chargé et est pas nul affiche le contenue et si il est null retourn loading en atendant */
   }
   if (selectedFlat == null) return <div>...Loading</div>;
 

@@ -37,3 +37,9 @@ width: 90%;
 .logo-kasa{
     margin-left: 5%;
 }
+
+@media screen and (width <= 768px) {
+    .liste {
+        font-size: 12px;
+      }
+}
