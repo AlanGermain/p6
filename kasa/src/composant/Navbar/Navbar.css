@@ -25,14 +25,15 @@ width: 90%;
     margin-left: 10%;
     width:15%;
    text-align: center;
+   margin-right: 1rem;
    
 }
 .propos{
-    
+    width: 5rem;
     justify-content: center;
     text-align: center;
+    margin-right: 3rem;
     margin-left: 1rem;
-    
 }
 .logo-kasa{
     margin-left: 5%;
@@ -41,5 +42,7 @@ width: 90%;
 @media screen and (width <= 768px) {
     .liste {
         font-size: 12px;
+        text-transform: uppercase;
       }
+       
 }

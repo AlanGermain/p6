@@ -3,7 +3,7 @@
     min-height: 100px;
     margin: auto;
     border-radius: 1rem;
-   
+   object-fit: cover;
     opacity: 2;
     margin-bottom: 2rem;
 }

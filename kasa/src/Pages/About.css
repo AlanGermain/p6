@@ -1,3 +1,9 @@
 .about_contener{
     padding-inline: 3rem;
 }
+
+@media screen and (width <= 768px) {
+    .about_contener{
+       flex-basis: 100%;
+    }
+}

@@ -20,12 +20,13 @@ function Grille() {
   return (
     <div className="location">
       {apartments.map((apartment) => (
-        <AppartementCard
-          key={apartment.id}
-          title={apartment.title}
-          image={apartment.cover}
-          id={apartment.id}
-        />
+        <React.Fragment key={apartment.id}>
+          <AppartementCard
+            title={apartment.title}
+            image={apartment.cover}
+            id={apartment.id}
+          />
+        </React.Fragment>
       ))}
     </div>
   );

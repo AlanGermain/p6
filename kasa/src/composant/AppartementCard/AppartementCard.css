@@ -29,15 +29,18 @@
 @media screen and (width <= 768px) {
         .img{
                 display: flex;
-                width: 100%;
+                width: 100% !important;
                 margin: 0;
                 padding: 0;
         }
         
         .appartement{
                 display: flex;
-                width: 100%;
+                flex-basis: 100%;
                 margin: 0;
                 padding: 0;
+        }
+        .location{
+                width: 100%;
         }
     }

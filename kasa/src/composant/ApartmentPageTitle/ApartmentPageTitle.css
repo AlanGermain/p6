@@ -72,3 +72,17 @@ border-radius: 50%;
     font-size: 1.8rem;
     color: #dfdbdb;
 }
+
+@media screen and (width <= 768px) {
+ .header{
+display: flex;
+flex-direction: column;
+}
+.apartment_owner{
+    display: flex;
+    justify-content: space-between;
+}
+.details{
+    order:1;
+}
+}

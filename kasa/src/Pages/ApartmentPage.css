@@ -7,3 +7,9 @@
     display: flex;
     gap: 1rem;
 }
+@media screen and (width <= 768px) {
+    .apartment_area{
+        display: flex;
+  flex-direction: column;
+    }
+}
