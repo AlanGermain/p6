@@ -23,13 +23,13 @@ width: 90%;
     display: flex;
     justify-content: space-between;
     margin-left: 10%;
-    width:15%;
+    width: 15%;
    text-align: center;
    margin-right: 1rem;
    
 }
 .propos{
-    width: 5rem;
+    width: 7rem;
     justify-content: center;
     text-align: center;
     margin-right: 3rem;

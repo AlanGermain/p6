@@ -7,7 +7,7 @@ function ImageBanner(props) {
 
   const getClassName = (i) => {
     {
-      /*sil'index de l'image est égale lui donne la class show */
+      /*s'il'index de l'image est égale lui donne la class show */
     }
     if (i === currentPicture) return "image-show";
     return "image";
